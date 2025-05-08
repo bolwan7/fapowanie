@@ -43,8 +43,8 @@ func downloadFile(filepath string, url string) (err error) {
 func main() {
 	i := 0
 
-	l := flag.String("l", "", "link to download")
-	n := flag.String("n", "", "name (obligatory)")
+	l := flag.String("l", "", "link to download (fapello.com)")
+	n := flag.String("n", "", "name of the actress (obligatory)")
 	flag.Parse()
 	flag.Usage()
 
