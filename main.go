@@ -116,7 +116,8 @@ func main() {
 			x := strconv.Itoa(i)
 			filename := filepath.Join(*n+x+ext)
 			i++
-			downloadFile(filepath.Base("") + filename, url)
+			g, _ := filepath.Abs("")
+			downloadFile(g + filename, url)
 			
 		}
 		
