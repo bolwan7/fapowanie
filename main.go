@@ -104,6 +104,7 @@ func main() {
 		
 	})
 	c.OnHTML("video, source", func(e *colly.HTMLElement) {
+
 		link := e.Attr("src")
 		if link == "" {
 			return
@@ -115,7 +116,7 @@ func main() {
 			x := strconv.Itoa(i)
 			filename := filepath.Join(*n+x+ext)
 			i++
-			downloadFile("C:\\Users\\tom4s\\Desktop\\wirusy\\video\\" + filename, url)
+			downloadFile(filepath.Base("") + filename, url)
 			
 		}
 		
